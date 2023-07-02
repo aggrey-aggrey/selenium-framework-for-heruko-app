@@ -1,4 +1,4 @@
-import org.aggrey.Pages.AddRemoveElementPage;
+import org.aggrey.pages.AddRemoveElementPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;

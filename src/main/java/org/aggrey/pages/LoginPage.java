@@ -1,13 +1,12 @@
-package org.aggrey.Pages;
+package org.aggrey.pages;
 
+import org.aggrey.testbase.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    WebDriver driver;
+public class LoginPage extends TestBase {
     private static WebElement element;
     By userNameTextBox = By.cssSelector("#username");
     By passwordTextBox = By.cssSelector("#password");
