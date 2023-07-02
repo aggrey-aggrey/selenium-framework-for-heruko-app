@@ -12,6 +12,8 @@ public class LoginPage {
     By userNameTextBox = By.cssSelector("#username");
     By passwordTextBox = By.cssSelector("#password");
     By loginBtn = By.cssSelector("button[type='submit']");
+    By logoutBtn = By.cssSelector("a[href='/logout'");
+    By invalidLoginMsg = By.cssSelector("#flash");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -28,8 +30,18 @@ public class LoginPage {
         return element;
     }
 
+    public WebElement invalidLoginMessage(WebDriver driver){
+        element = driver.findElement((By) invalidLoginMsg);
+        return element;
+    }
+
     public WebElement loginButton(WebDriver driver) {
         element = driver.findElement((By) loginBtn);
+        return element;
+    }
+
+    private WebElement logoutButton(WebDriver driver) {
+        element = driver.findElement((By) logoutBtn);
         return element;
     }
 
@@ -46,6 +58,12 @@ public class LoginPage {
     public void clickLoginButton(WebDriver driver) {
         loginButton(driver).click();
     }
+
+    public void clickLogoutButton(WebDriver driver){
+        logoutButton(driver).click();
+    }
+
+
 
 
 }

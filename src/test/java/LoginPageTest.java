@@ -28,11 +28,22 @@ public class LoginPageTest {
     }
 
     @Test
-
     public void login() {
+        //note the username and password are public on heruko website
+        loginPage.typeUserName(driver, "tomsmith");
+        loginPage.typePassword(driver, "SuperSecretPassword!");
+        loginPage.clickLoginButton(driver);
+        loginPage.clickLogoutButton(driver);
+    }
+
+
+    @Test
+    public void invalidLogin(){
         loginPage.typeUserName(driver, "");
         loginPage.typePassword(driver, "");
         loginPage.clickLoginButton(driver);
+        loginPage.invalidLoginMessage(driver).isDisplayed();
+
     }
 
     @AfterClass
