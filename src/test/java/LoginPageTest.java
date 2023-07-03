@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class LoginPageTest extends TestBase {
- //  WebDriver driver;
     private String loginUrl = "https://the-internet.herokuapp.com/login";
     LoginPage loginPage;
 
