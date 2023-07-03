@@ -1,11 +1,10 @@
 import org.aggrey.pages.DropDownPage;
-import org.aggrey.pages.LoginPage;
 import org.aggrey.testbase.TestBase;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class DropDownTest extends TestBase {
+public class DropDownPageTest extends TestBase {
     private String dropDownUrl = "https://the-internet.herokuapp.com/dropdown";
     DropDownPage dropDownPage;
 

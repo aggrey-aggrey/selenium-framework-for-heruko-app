@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class AddRemoveElementTest {
+public class AddRemoveElementPageTest {
     WebDriver driver;
     private String baseUrl = "https://the-internet.herokuapp.com/add_remove_elements/";
     AddRemoveElementPage addRemovePage;
